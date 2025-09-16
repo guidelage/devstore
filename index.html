@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Guilherme Lage" content="DevClub" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DevStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="logo">
+      <h1 class="logo">DevStore</h1>
+    </div>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Produtos</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="conteiner">
+      <section>
+        <div class="tech-circles">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </section>
+
+      <div class="list">
+        <div class="item active">
+          <div class="product-image">
+            <img src="img/air-pods.png" alt="air-pods" />
+          </div>
+          <div class="content">
+            <p class="subtitle">Som Premium</p>
+            <h2 class="title">Air Pod Max</h2>
+            <p class="description-image">
+              Experimente o som em sua forma mais pura. Cancelamento de ruído
+              adaptativo, qualidade de áudio excepcional e design ergonômico
+              para o máximo conforto. Sua música nunca soou tão bem.
+            </p>
+            <button class="btn">Saiba Mais</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="product-image">
+            <img src="img/apple-watch.png" alt="apple-watch" />
+          </div>
+          <div class="content">
+            <p class="subtitle">Novo Lançamento</p>
+            <h2 class="title">Apple Watch Series 10</h2>
+            <p class="description-image">
+              O smartwatch mais avançado do mercado. Monitoramento completo de
+              saúde, GPS integrado, tela AMOLED de alta resolução e bateria de
+              longa duração. Perfeito para acompanhar seu estilo de vida ativo.
+            </p>
+            <button class="btn">Saiba Mais</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="product-image">
+            <img src="img/vision-pro.png" alt="vision-pro" />
+          </div>
+          <div class="content">
+            <p class="subtitle">Alta Performance</p>
+            <h2 class="title">Vision Pro</h2>
+            <p class="description-image">
+              O smartwatch mais avançado do mercado. Monitoramento completo de
+              saúde, GPS integrado, tela AMOLED de alta resolução e bateria de
+              longa duração. Perfeito para acompanhar seu estilo de vida ativo.
+            </p>
+            <button class="btn">Saiba Mais</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrows">
+        <button class="arrow-btn" id="prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="#fff"
+            class="bi bi-caret-left-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+            />
+          </svg>
+        </button>
+        <button class="arrow-btn" id="next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="#fff"
+            class="bi bi-caret-right-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="indicators">
+        <div class="numbers">01</div>
+        <div class="lines">
+          <div class="line active"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </main>
+
+    <section>
+      <h2 class="section-title">Produtos em Destaque</h2>
+      <div class="products grid">
+        <div class="product-card">
+          <img src="/img/cyber-drone.png" alt="cyber-drone" />
+          <div class="product-title-container">
+            <h3 class="product-title">Cyber Drone</h3>
+          </div>
+          <p class="product-description">
+            Voe pelo futuro com nosso drone de alta precisão e câmera 8K."
+          </p>
+          <button class="btn">Saiba Mais</button>
+        </div>
+
+        <div class="product-card">
+          <img src="/img/ipad-air-tablet.png" alt="ipad-air-tablet" />
+          <div class="product-title-container">
+            <h3 class="product-title">Ipad Pro 11</h3>
+          </div>
+          <p class="product-description">
+            Produtividade e entretenimento com a tela mais vívida do mercado."
+          </p>
+          <button class="btn">Saiba Mais</button>
+        </div>
+
+
+        <div class="product-card">
+          <img src="/img/cyber-drone.png" alt="cyber-drone" />
+          <div class="product-title-container">
+            <h3 class="product-title">Cyber Drone</h3>
+          </div>
+          <p class="product-description">
+            Voe pelo futuro com nosso drone de alta precisão e câmera 8K."
+          </p>
+          <button class="btn">Saiba Mais</button>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
