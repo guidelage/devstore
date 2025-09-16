@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #0f0f1e;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Orbitron", sans-serif;
+  color: #00f7ff;
+  padding: 10px;
+  width: 20rem;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+  background: transparent;
+  box-shadow: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0px 150vh; */
+  /* margin: 0 auto; */
+  /* margin-top: -40px; */
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0); /* 0 = totalmente transparente */
+  box-shadow: none;
+}
+
+header nav ul {
+  display: flex;
+  gap: 40px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+header nav ul li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+header nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00f7ff;
+  transition: all 0.2s ease;
+}
+header nav ul li:hover::after {
+  width: 100%;
+}
+
+.contact-section {
+  padding: 20px 40px;
+  background-color: #121224;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1f1f3a;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 247, 255, 0.2);
+}
+
+.contact-form .form-group {
+  margin-bottom: 10px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ccc;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #0f0f1e;
+  border: 1px solid rgba(0, 247, 255, 0.3);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #00f7ff;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.btn {
+  padding: 12px 20px;
+  position: relative;
+  background: linear-gradient(90deg, #00f7ff, #0066ff);
+  border-radius: 30px;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.section-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  color: #00f7ff;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+footer {
+  background-color: #0a0a14;
+  padding: 40px 40px 5px;
+  border-top: 1px solid rgba(0, 247, 255, 0.2);
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 10px;
+}
+
+.footer-logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  color: #00f7ff;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  font-family: "Orbitron", sans-serif;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-links ul {
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: #00f7ff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+.social-icons a {
+  color: #ccc;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons a:hover {
+  color: #00f7ff;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #888;
+}
+
+
