@@ -9,6 +9,7 @@
 body {
   background-color: #0f0f1e;
   color: #fff;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -390,6 +391,7 @@ header nav ul li:hover::after {
 }
 
 .product-card {
+  margin-bottom: 20px;
   background-color: #1f1f3a;
   border: 1px solid rgba(0, 247, 255, 0.2);
   border-radius: 15px;
@@ -413,7 +415,7 @@ header nav ul li:hover::after {
   width: auto;
   max-width: 100%;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   object-fit: contain;
 }
 
@@ -550,6 +552,7 @@ footer {
   font-size: 1.2rem;
   margin-bottom: 15px;
   color: #fff;
+  margin-right: 20px;
 }
 
 .footer-links ul {
@@ -590,4 +593,203 @@ footer {
 .scroll-link {
   color: #fff;
   text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Pequeno (até 480px) */
+@media (max-width: 480px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .list {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .conteiner {
+    height: 100vh;
+    position: relative;
+  }
+
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .indicators {
+    display: none;
+  }
+
+  .tech-circles {
+    display: flex;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+  .item {
+    flex-direction: column;
+    z-index: 1;
+  }
+  .product-image {
+    margin-top: 100px;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 20px;
+  }
+  .content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .product-card {
+    width: 70%;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Tablet (481px - 768px) A PARTIR DE <627 DÁ UMA BUGADA */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .list {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .conteiner {
+    height: 100vh;
+    position: relative;
+  }
+
+  .arrow-btn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .indicators {
+    display: none;
+  }
+
+  .tech-circles {
+    display: flex;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+  .item {
+    flex-direction: column;
+    z-index: 1;
+  }
+  .product-image {
+    margin-top: 150px;
+    width: 80%;
+    height: 50%;
+    margin: 0;
+  }
+  .content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .product-card {
+    width: 70%;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Tablet Grande / Notebook (769px - 1024px) CHECK*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .list {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .conteiner {
+    height: 100vh;
+    position: relative;
+  }
+
+  .arrow-btn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .indicators {
+    display: none;
+  }
+
+  .tech-circles {
+    display: flex;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+  .item {
+    flex-direction: column;
+    z-index: 1;
+  }
+  .product-image {
+    margin-top: 150px;
+    width: 80%;
+    height: 50%;
+    margin: 0;
+  }
+  .content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .product-card {
+    width: 70%;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Desktop (1025px - 1200px) CHECK */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+/* Desktop Grande (acima de 1201px) CHECK */
+@media (min-width: 1201px) {
+  .title {
+    font-size: 4.5rem;
+  }
 }
