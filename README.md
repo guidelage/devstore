@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://guidelage.github.io/devstore/">
-    <img src="https://i.imgur.com/Evnbe31.gif" alt="Demonstração do Projeto DevStore"/>
+    <img src="https://raw.githubusercontent.com/gusdelage/devstore/main/landingpage-devstore.gif" alt="Demonstração do Projeto DevStore"/>
   </a>
 </p>
 
