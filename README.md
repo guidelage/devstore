@@ -53,6 +53,7 @@ O projeto foi construído utilizando as seguintes tecnologias:
 -   **CSS3**
 -   **JavaScript**
 -   **Google Fonts** (Orbitron e Montserrat)
+-   Font Awesome / Bootstrap (para ícones)
 
 ## 🚀 Como Executar o Projeto
 
